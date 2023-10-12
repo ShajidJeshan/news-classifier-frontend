@@ -13,7 +13,11 @@ export default function TableData({ data = [], headers = [] }) {
       <tbody>
         {data?.map((item, i) => (
           <tr key={i}>
-            <td><a href={item.url} target="_blank">{item.url}</a></td>
+            <td>
+              <a href={item.url} target='_blank'>
+                {item.url}
+              </a>
+            </td>
             <td>{item.category}</td>
           </tr>
         ))}
